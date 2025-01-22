@@ -1,0 +1,25 @@
+{
+  "name": "Zoraxy",
+  "description": "Zoraxy Reverse Proxy for Home Assistant",
+  "version": "1.0.0",
+  "slug": "zoraxy",
+  "startup": "application",
+  "arch": [
+    "amd64",
+    "armhf",
+    "armv7",
+    "aarch64",
+    "i386"
+  ],
+  "init": false,
+  "map": [
+    "config"
+  ],
+  "options": {
+    "port": 8000
+  },
+  "schema": {
+    "port": "int"
+  },
+  "image": "your-docker-repo/zoraxy"
+}
